@@ -1,18 +1,20 @@
-#include <stdio.h>
+# include <stdio.h>
 
 int main(void)
 {
     int n;
 
-    printf("정수: ");
+    printf("몇 단 삼각형입니까?: ");
     scanf("%d", &n);
+    
+    for (int i = 1; i <= n; i++)
+    {
+        for(int j = n-1; j > n; j--)
+          putchar(' ');
+        for(int j = 0; j < 2*i+1; j++)
+          putchar('*');
+        putchar('\n');
+    }
 
-    if(n==1)
-    puts("A");
-
-    else if(n==2)
-    puts("B");
-
-    else if(n==3)
-    puts("C");
+    return 0;
 }

@@ -1,0 +1,20 @@
+# 박 진서
+### 202530213
+
+## 10월 30일 강의
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "InStack.h"
+
+
+int Initialize(IntStack *s, int max)
+{
+    s->ptr=0;
+    if((s-.stk=calloc(max, sizeof(int)))==NULL) {
+        s->max=0;
+        return -1;
+    }
+    s->max=max;
+    return=0;
+}
